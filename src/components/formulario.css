@@ -1,0 +1,138 @@
+/* Formulario.css */
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Estilos globales del formulario */
+body {
+  /* background-color: #00f9fe; */
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+  background-color: #00f9fe;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título del formulario */
+h2 {
+  font-size: 45px;
+  font-family: "Italianno", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #395555;
+}
+
+/* Estilos para los grupos de los campos del formulario */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo de las etiquetas de los campos */
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #395555;
+  margin-bottom: 10px;
+}
+
+/* Estilo de los inputs de texto y textarea */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #395555;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  opacity: 0.7; /* Opacidad clara */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #23d2d5;
+  outline: none;
+}
+
+/* Texto por defecto en el textarea */
+textarea::placeholder {
+  color: #bbb;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/* Estilo para las opciones de radio (horizontalmente alineadas) */
+.horizontal-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Estilo del botón de envío */
+button[type="submit"] {
+  background-color: #022253;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a3f7e;
+}
+
+/* Responsividad para pantallas más pequeñas (como 360x780) */
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  label {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #395555;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+}

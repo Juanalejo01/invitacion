@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255, 1) 45%,
+    rgba(35, 210, 213, 0.3) 60%
+  );
+  color: #395555;
+}
+
+.header {
+  text-align: center;
+  margin-top: 0px;
+  padding: 0px;
+  max-width: 100%;
+  position: relative;
+}
+
+h1 {
+  font-family: "Italianno", Sans-serif;
+  font-size: 85px;
+  font-weight: 500;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #002153;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 5px 1px 8px rgba(220, 220, 220, 0.9);
+  white-space: nowrap;
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+h4,
+h5 {
+  font-size: 50px;
+  font-family: "Italianno", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0px;
+  color: #395555;
+}
+
+h1.hidden {
+  opacity: 0;
+}
+
+/* Estilos para la sección de la foto */
+.foto-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Asegura que el contenido fuera de los límites del contenedor no se vea */
+}
+
+.foto {
+  display: block;
+  width: 430px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  object-fit: cover; /* Mantiene la relación de aspecto sin distorsionar */
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./assets/IMG-20241127-WA0024.jpg"); /* Añade la imagen de fondo después del degradado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; /* Comienza con la imagen oculta */
+  animation: fadeIn 2s ease-in-out forwards; /* Llama a la animación 'fadeIn' */
+}
+
+/* Definir la animación 'fadeIn' */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Inicia con opacidad 0 */
+  }
+  100% {
+    opacity: 1; /* Termina con opacidad 1 */
+  }
+}
+
+/* Para que la descripción quede centrada y no interfiera */
+.descripcion {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 10px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #395555;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 600px;
+}
+
+.descripcion {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 10px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #395555;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 600px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #022253;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1a3f7e;
+}

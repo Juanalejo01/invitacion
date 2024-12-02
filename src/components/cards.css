@@ -1,0 +1,85 @@
+/* Cards.css */
+
+/* Contenedor principal de las cartas */
+.cards-container {
+  display: flex;
+  justify-content: center; /* Centra las cartas horizontalmente */
+  gap: 10px; /* Espacio entre las cartas */
+  padding: 20px;
+  width: 100%;
+}
+
+/* Estilo de cada carta */
+.card {
+  background-color: #fff;
+  width: 120px; /* Reducir el tamaño de las cartas */
+  height: 120px; /* Ajustar el alto para mantener la forma circular */
+  border-radius: 50%; /* Hacer la carta circular */
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al hacer hover */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Imagen dentro de la carta */
+.card-image {
+  width: 80%; /* Reducir el tamaño de la imagen */
+  height: 80%; /* Mantener la proporción */
+  object-fit: cover;
+  border-radius: 50%; /* Hacer la imagen circular */
+}
+
+/* Texto de la carta */
+.card-text {
+  font-size: 0.8rem;
+  color: #333;
+  margin-top: 8px;
+  background-color: #f9f9f9;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 50% 50%; /* Bordes redondeados en la parte inferior */
+}
+
+/* Efecto de hover (crecimiento) */
+.card:hover {
+  transform: scale(1.1); /* Crecer un poco más */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombras más grandes */
+}
+
+/* Responsividad: ajustamos el tamaño de las cartas en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .cards-container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards-container {
+    gap: 15px; /* Menos espacio entre las cartas en pantallas pequeñas */
+  }
+
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card-text {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,134 @@
+/* Temporizador.css */
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Fondo de la página */
+body {
+  background-color: #00f9fe;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Contenedor principal */
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  background-color: transparent;
+  text-align: center;
+}
+
+/* Título */
+h3 {
+  font-size: 50px;
+  font-family: "Italianno", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0px;
+  color: #395555;
+}
+
+/* Caja de tiempo */
+.time-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Cada contenedor de tiempo */
+.time-box div {
+  background-color: #23d2d5;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del valor numérico */
+.time {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Estilo de las etiquetas (Días, Horas, Minutos, Segundos) */
+span {
+  font-size: 0.9rem;
+  margin-top: 4px;
+  color: white;
+}
+
+/* Responsividad */
+@media screen and (max-width: 480px) {
+  .countdown {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .time-box {
+    gap: 0.8rem;
+  }
+
+  .time-box div {
+    min-width: 45px;
+    padding: 6px;
+  }
+
+  .time {
+    font-size: 1.8rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .countdown {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .time-box {
+    gap: 1rem;
+  }
+
+  .time-box div {
+    min-width: 50px;
+    padding: 8px;
+  }
+
+  .time {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+}
