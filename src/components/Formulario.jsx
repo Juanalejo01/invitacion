@@ -1,4 +1,4 @@
-import "./Formulario.css";
+import "./formulario.css";
 
 const Formulario = () => {
   return (

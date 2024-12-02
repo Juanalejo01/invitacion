@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"; // Solo esta línea es suficiente
 import "./App.css";
 import Temporizador from "./components/Temporizador";
-import Logo from "./assets/viviana-centro.svg";
 import Foto from "./assets/IMG-20241127-WA0024.jpg"; // Importa la imagen SVG
 import Formulario from "./components/Formulario";
 import Cards from "./components/Cards";
