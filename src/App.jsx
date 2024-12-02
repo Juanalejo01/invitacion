@@ -37,10 +37,11 @@ function App() {
       <div className="foto-section">
         <img src={Foto} alt="Foto de Viviana" className="foto" />
       </div>
-
-      <p className="descripcion">
-        Hola a todos, soy Viviana Rodas. Me complace invitarlos a todos a Mis
-        Quince, donde realizaré una celebración y tú estás invitado!
+      <p className="descripcion">DIOS TE BENDIGA!</p>
+      <p className="descripcion2">
+        ¡Quiero que estés conmigo en un día muy especial! Ven a celebrar mis
+        quince años, será una fiesta increíble, llena de alegría y buenos
+        momentos. ¡Te espero con mucho cariño
       </p>
       <main className="main">
         <div className="content">
