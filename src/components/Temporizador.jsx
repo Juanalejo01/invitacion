@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Temporizador.css";
+import "./temporizador.css";
 
 const Temporizador = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({
