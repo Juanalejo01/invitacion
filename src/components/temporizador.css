@@ -30,22 +30,14 @@ body {
 }
 
 /* Título */
-h3 {
-  font-size: 50px;
-  font-family: "Italianno", sans-serif;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 0px;
-  color: #395555;
-}
 
 /* Caja de tiempo */
 .time-box {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.1rem;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 0px;
   width: 100%;
 }
 
@@ -71,64 +63,16 @@ h3 {
 
 /* Estilo de las etiquetas (Días, Horas, Minutos, Segundos) */
 span {
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   margin-top: 4px;
   color: white;
 }
 
-/* Responsividad */
-@media screen and (max-width: 480px) {
-  .countdown {
-    width: 90%;
-    max-width: 350px;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  .time-box {
-    gap: 0.8rem;
-  }
-
-  .time-box div {
-    min-width: 45px;
-    padding: 6px;
-  }
-
-  .time {
-    font-size: 1.8rem;
-  }
-
-  span {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .countdown {
-    width: 90%;
-    max-width: 400px;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  .time-box {
-    gap: 1rem;
-  }
-
-  .time-box div {
-    min-width: 50px;
-    padding: 8px;
-  }
-
-  .time {
-    font-size: 2rem;
-  }
-
-  span {
-    font-size: 0.9rem;
-  }
+h3 {
+  font-size: 50px;
+  font-family: "Italianno", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0px;
+  color: #395555;
 }

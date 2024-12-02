@@ -37,27 +37,29 @@ const Temporizador = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="countdown">
+    <>
       <h3>¡Prepárate! Faltan...</h3>
-      <div className="time-box">
-        <div>
-          <p className="time">{timeLeft.days}</p>
-          <span>Días</span>
-        </div>
-        <div>
-          <p className="time">{timeLeft.hours}</p>
-          <span>Horas</span>
-        </div>
-        <div>
-          <p className="time">{timeLeft.minutes}</p>
-          <span>Minutos</span>
-        </div>
-        <div>
-          <p className="time">{timeLeft.seconds}</p>
-          <span>Segundos</span>
+      <div className="countdown">
+        <div className="time-box">
+          <div>
+            <p className="time">{timeLeft.days}</p>
+            <span>Días</span>
+          </div>
+          <div>
+            <p className="time">{timeLeft.hours}</p>
+            <span>Horas</span>
+          </div>
+          <div>
+            <p className="time">{timeLeft.minutes}</p>
+            <span>Minutos</span>
+          </div>
+          <div>
+            <p className="time">{timeLeft.seconds}</p>
+            <span>Segundos</span>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

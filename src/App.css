@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Handlee&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Asegura que los márgenes y bordes no afecten el tamaño total de los elementos */
+}
+
+body,
+html {
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina relleno por defecto */
+  overflow-x: hidden; /* Desactiva el desplazamiento horizontal */
+  width: 100%; /* Asegura que el contenido no se desborde */
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -8,10 +22,12 @@
   min-height: 100vh;
   background: radial-gradient(
     circle,
-    rgb(255, 255, 255, 1) 45%,
+    rgb(255, 255, 255) 50%,
     rgba(35, 210, 213, 0.3) 60%
   );
   color: #395555;
+  width: 100%; /* Asegura que el contenedor principal no se desborde */
+  overflow-x: hidden; /* Evita desplazamiento horizontal */
 }
 
 .header {
@@ -27,6 +43,7 @@ h1 {
   font-size: 85px;
   font-weight: 500;
   position: fixed;
+  margin-top: 100px;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -66,7 +83,7 @@ h1.hidden {
 
 .foto {
   display: block;
-  width: 430px;
+  width: 450px;
   height: auto;
   position: relative;
   z-index: 1;
@@ -81,7 +98,7 @@ h1.hidden {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0; /* Comienza con la imagen oculta */
-  animation: fadeIn 2s ease-in-out forwards; /* Llama a la animación 'fadeIn' */
+  animation: fadeIn 2.5s ease-in-out forwards; /* Llama a la animación 'fadeIn' */
 }
 
 /* Definir la animación 'fadeIn' */
@@ -95,23 +112,6 @@ h1.hidden {
 }
 
 /* Para que la descripción quede centrada y no interfiera */
-.descripcion {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 10px;
-  padding: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  color: #395555;
-  line-height: 1.5;
-  font-weight: 600;
-  max-width: 600px;
-}
 
 .descripcion {
   text-align: center;
@@ -119,7 +119,7 @@ h1.hidden {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px 10px;
+  margin-top: 100px;
   padding: 20px;
   padding-left: 30px;
   padding-right: 30px;
