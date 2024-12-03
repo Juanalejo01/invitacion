@@ -56,6 +56,13 @@ const Formulario = () => {
               value="No voy"
               required
             />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://mis-quince-viviana.netlify.app/"
+            ></input>
+            <input type="hidden" name="_captcha" value="false"></input>
+
             <label htmlFor="no-voy">No voy</label>
           </div>
         </div>
