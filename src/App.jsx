@@ -6,7 +6,7 @@ import Formulario from "./components/Formulario";
 import Cards from "./components/Cards";
 
 function App() {
-  const targetDate = new Date("2024-12-13T00:00:00"); // Fecha objetivo
+  const targetDate = new Date("2024-12-14T00:00:00"); // Fecha objetivo
 
   const [isHidden, setIsHidden] = useState(false);
 
